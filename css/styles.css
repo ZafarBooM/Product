@@ -51,11 +51,11 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
-.navbar-brand {
+.logo {
   display: flex;
   align-items: center;
 }
-.navbar-brand h2 {
+.logo h2 {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 1.75rem;
@@ -97,7 +97,7 @@ header nav {
   color: var(--color-txt);
 }
 .fa-bars {
-  display: none!important;
+  display: none !important;
   font-size: 1.75rem;
 }
 
@@ -163,7 +163,8 @@ header nav {
 }
 .test-main {
   width: 15rem;
-}.test-main h3{
+}
+.test-main h3 {
   margin-top: 30px;
 }
 .test-main img {
@@ -389,7 +390,8 @@ header nav {
 
 .price {
   text-align: center;
-}.price .section-title{
+}
+.price .section-title {
   padding-top: 6.7%;
 }
 .price-cards {
@@ -400,6 +402,7 @@ header nav {
 .price-cards .card {
   padding-top: 24px;
   padding-bottom: 2rem;
+  margin-top: 32px;
 }
 .price-cards .card:nth-child(2) {
   background: var(--green);
@@ -443,10 +446,10 @@ header nav {
   margin-left: -80px;
 }
 .price-cards .card p {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .price-cards .card button {
-  margin-top: 22px;
+  margin-top: 1.375rem;
   padding: 11px 18px;
   font-weight: 600;
   font-size: 18px;
@@ -465,6 +468,85 @@ header nav {
 .price-cards .card:nth-child(2) button {
   background: #fff;
   color: var(--green);
+}
+.comment {
+  padding-top: 11.2%;
+}
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comment .section-title p {
+  width: 43%;
+  padding-top: 10px;
+}
+.comment-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 3.125rem;
+}
+.comment .card {
+  padding: 1.75rem 1.625rem 1.4375rem;
+  border-radius: 5px;
+}
+.comment .card img {
+  width: 6.625rem;
+  background: #fff;
+  margin: 0;
+}
+.card p {
+  color: #737373;
+}
+.comment-images-gr {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.comment-images-gr img {
+  width: 50px !important;
+  background: #fff;
+}
+.comment-images-gr h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--green);
+}
+.comment-images-gr span {
+  color: var(--card_txt_color);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.comment-images-gr div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.875rem;
+}
+
+.companies-group {
+  padding-top: 11.2%;
+  display: flex;
+  justify-content: center;
+}
+.company-content {
+  display: flex;
+  padding: 49px 51px;
+  padding-bottom: 0;
+  background: var(--green);
+  border-radius: 2rem;
+}
+.company-txt span {
+  display: block;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 151.4%;
+  width: 518px;
+}.company-txt button{
+  background: #fff;
+  color: var(--green);
+  margin-top: 90px;
 }
 
 @media only screen and (max-width: 410px) {
@@ -523,5 +605,34 @@ header nav {
 
   .price-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .comment .section-title {
+    text-align: center;
+  }
+  .comment .section-title p {
+    width: 90%;
+  }
+  .comment-cards {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 0;
+  }
+  .comment-cards .card {
+    margin-top: 32px;
+  }
+
+  .companies-group{
+    padding-top: 100px;
+  }
+  .company-content{
+    flex-direction: column;
+    width: 338px;
+    text-align: center;
+  }
+  .company-content span{
+    width: 100%;
+  }.company-txt button{
+    margin-top: 70px;
+    margin-bottom: 42px;
   }
 }
